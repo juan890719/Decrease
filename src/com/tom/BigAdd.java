@@ -3,12 +3,14 @@ package com.tom;
 public class BigAdd {
 
 	public static void main(String[] args) {
-		for(int i = 0; i < 5; i++) {
-			for(int j = 0; j < ( 5 - i ) ; j++) {
-				System.out.print("*");
+		int i = 0;
+		while(i < 5) {
+			System.out.println(i);
+			i++;
+			if(i == 3) {
+				break;
 			}
-			System.out.println();
 		}
-	}
-
+		System.out.println("Done");
+		}
 }
